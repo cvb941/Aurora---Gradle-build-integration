@@ -1,0 +1,17 @@
+gradle.buildFinished {
+    result ->
+    
+        //CHANGE THIS TO YOUR AURORA PATH
+        String auroraPath = ""
+
+        File auroraFolder = new File(auroraPath)
+        if (auroraFolder.exists()) {
+            println("Notifying Aurora to blink the keyboard")
+            File alertFile
+            if (result.failure == null)
+                alertFile = new File(auroraPath + "gradleBuildComplete")
+            else
+                alertFile = new File(auroraPath + "gradleBuildFailed")
+            alertFile.mkdirs()
+        }
+}
