@@ -27,7 +27,7 @@ This repository contains two files (**AuroraNotify.gradle**, **GradleBuildsScrip
     //CHANGE THIS TO YOUR AURORA PATH
     String auroraPath = "C:\\Users\\Johny\\Folder\\Aurora\\"
     ```
-5. Include the following line in your **build.gradle** folder.
+5. Include the following line in your **build.gradle** file.
     **Replace the path with the path to your AuroraNotify.gradle**
 
     ```
