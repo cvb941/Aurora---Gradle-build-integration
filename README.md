@@ -1,6 +1,6 @@
 # Aurora script - Gradle build integration
 
-##Get notified about successful/failed gradle builds on your RGB keyboard.
+## Get notified about successful/failed gradle builds on your RGB keyboard.
 Stop getting distracted while waiting for your builds to finish without actually stopping distracting yourself.
 You can keep on browsing your favourite cat photos while you're waiting for your build to finish.
 Your keyboard notifies you with color-coded blinking when the build is finished, so that you don't forget to get back to work!
@@ -32,7 +32,8 @@ This repository contains two files (**AuroraNotify.gradle**, **GradleBuildsScrip
 
     ```
     //Aurora script
-    apply from: 'C:\\Users\\Johny\\AppData\\Roaming\\Aurora\\Profiles\\desktop\\Scripts\\AuroraNotify.gradle'
+    if (file('C:\\Users\\Johny\\AppData\\Roaming\\Aurora\\Profiles\\desktop\\Scripts\\AuroraNotify.gradle').exists())
+        apply from: 'C:\\Users\\Johny\\AppData\\Roaming\\Aurora\\Profiles\\desktop\\Scripts\\AuroraNotify.gradle'
     ```
 6. Restart Aurora, go to your desktop profile and enable "Gradle Builds" in the scripts window, in the bottom right corner.
 
