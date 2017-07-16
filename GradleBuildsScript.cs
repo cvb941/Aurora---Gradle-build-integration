@@ -10,8 +10,7 @@ using System.Drawing;
 public class GradleBuildsScript
 {
 
-    //CHANGE THIS TO YOUR AURORA PATH
-    public const string auroraPath = "";
+    public const string auroraPath = ".\\";
 
     //SETTINGS
     public Color SuccessColor = Color.Green;

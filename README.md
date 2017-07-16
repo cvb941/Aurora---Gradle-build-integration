@@ -21,13 +21,7 @@ This repository contains two files (**AuroraNotify.gradle**, **GradleBuildsScrip
     //CHANGE THIS TO YOUR AURORA PATH
     public const string auroraPath = "C:\\Users\\Johny\\Folder\\Aurora\\";
     ```
-4. Open **GradleBuildsScript.cs** and do the same - change the auroraPath variable to your Aurora folder.
-
-    ```
-    //CHANGE THIS TO YOUR AURORA PATH
-    String auroraPath = "C:\\Users\\Johny\\Folder\\Aurora\\"
-    ```
-5. Include the following line in your project's **build.gradle** file.
+4. Include the following line in your project's **build.gradle** file.
     **Replace the path with the path to your AuroraNotify.gradle**
 
     ```
@@ -35,7 +29,7 @@ This repository contains two files (**AuroraNotify.gradle**, **GradleBuildsScrip
     if (file('C:\\Users\\Johny\\AppData\\Roaming\\Aurora\\Profiles\\desktop\\Scripts\\AuroraNotify.gradle').exists())
         apply from: 'C:\\Users\\Johny\\AppData\\Roaming\\Aurora\\Profiles\\desktop\\Scripts\\AuroraNotify.gradle'
     ```
-6. Restart Aurora, go to your desktop profile and enable "Gradle Builds" in the scripts window, in the bottom right corner.
+5. Restart Aurora, go to your desktop profile and enable "Gradle Builds" in the scripts window, in the bottom right corner.
 
 That's it! Your keyboard should now blink with green color every time a successful gradle build happens. If it fails, it blinks red.
 
